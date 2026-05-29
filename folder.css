@@ -157,17 +157,38 @@
   font-weight: bold;
 }
  
-.file-delete-btn {
-  background: rgba(255,60,60,0.15);
-  border: 2px solid rgba(255,60,60,0.6);
-  color: #ff6b6b;
+.file-buttons {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+ 
+.file-btn {
   padding: 6px 10px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.75rem;
+  border: 2px solid;
   transition: all 0.2s;
   white-space: nowrap;
-  flex-shrink: 0;
+}
+ 
+.file-download-btn {
+  background: rgba(0,255,65,0.15);
+  border-color: rgba(0,255,65,0.6);
+  color: #00ff41;
+}
+ 
+.file-download-btn:hover {
+  background: rgba(0,255,65,0.3);
+  border-color: #00ff41;
+  box-shadow: 0 0 12px rgba(0,255,65,0.3);
+}
+ 
+.file-delete-btn {
+  background: rgba(255,60,60,0.15);
+  border-color: rgba(255,60,60,0.6);
+  color: #ff6b6b;
 }
  
 .file-delete-btn:hover {
@@ -366,5 +387,29 @@
   border-color: #00ff41;
   background: rgba(0,255,65,0.2);
   box-shadow: 0 0 16px rgba(0,255,65,0.3);
+}
+ 
+/* ========== UPLOAD ZONE ========== */
+.upload-zone {
+  border: 2px dashed #ffd700;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255,215,0,0.05);
+  transition: all 0.3s;
+  display: block;
+}
+ 
+.upload-zone:hover {
+  background: rgba(255,215,0,0.12);
+  box-shadow: 0 0 15px rgba(255,215,0,0.2);
+}
+ 
+#uploadLabel {
+  display: block;
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 0.88rem;
 }
  

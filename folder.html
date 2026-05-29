@@ -82,10 +82,17 @@
     <div class="modal-box">
       <div class="modal-title">Add File to Folder</div>
       <button class="modal-close" id="closeAddFileModal">✕</button>
-      <input class="input-field" id="fileName" placeholder="File name…">
+      
+      <input class="input-field" id="fileNameInput" placeholder="File name…">
+      
+      <label class="upload-zone" id="uploadZone">
+        <span id="uploadLabel">📂 Select from System</span>
+        <input type="file" id="fileInputFromSystem" style="display:none">
+      </label>
+      
       <div class="modal-row">
         <button class="btn btn-ghost btn-full" id="cancelAddFileModal">Cancel</button>
-        <button class="btn btn-yellow btn-full" id="confirmAddFileModal">Add</button>
+        <button class="btn btn-yellow btn-full" id="confirmAddFileModal">Add File</button>
       </div>
     </div>
   </div>
